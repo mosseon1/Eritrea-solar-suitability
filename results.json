@@ -1,0 +1,57 @@
+{
+ "area_km2": 120382.0,
+ "excluded_slope_pct": 20.9,
+ "excluded_landcover_pct": 0.4,
+ "usable_km2": 94684.0,
+ "usable_pct": 78.7,
+ "mean_factor_scores": {
+  "GHI": 0.71,
+  "Slope": 0.74,
+  "Land cover": 0.92,
+  "Power lines": 0.43,
+  "Roads": 0.36
+ },
+ "suit_min_median_max": [
+  0.184,
+  0.596,
+  0.961
+ ],
+ "top10_threshold": 0.837,
+ "top10_km2": 9468.0,
+ "scen_kept_mean_pct": 94.7,
+ "scen_kept_min_pct": 89.8,
+ "top10_all300_km2": 6946.0,
+ "top10_ge90pct_km2": 7942.0,
+ "top10_ever_km2": 12508.0,
+ "baseline_top10_robust_pct": 83.9,
+ "weight_vs_kept_r": {
+  "GHI": 0.1,
+  "Slope": -0.08,
+  "Land cover": -0.24,
+  "Power lines": 0.04,
+  "Roads": -0.0
+ },
+ "power_gridfinder_km": 1714.0,
+ "power_osm_km": 162.0,
+ "roads_osm_km": 3202.0,
+ "within50km_power_gridfinder_pct": 67.7,
+ "within50km_power_osm_pct": 13.3,
+ "dek_cell_usable": false,
+ "dek_cell_values": {
+  "ghi": 6.37,
+  "slope": 1.7,
+  "landcover": 50,
+  "power_km": 0.0,
+  "road_km": 0.0
+ },
+ "dek3km_cells": 84,
+ "dek3km_best_score": 0.908,
+ "dek3km_best_percentile": 98.0,
+ "dek3km_median_score": 0.874,
+ "dek3km_max_robustness_pct": 100.0,
+ "gsa_ghi": 6.37,
+ "era5_ghi": 5.87,
+ "era5_bias_pct": -7.9,
+ "slope_gt10_pct": 20.9,
+ "within20km_road_pct": 56.4
+}
