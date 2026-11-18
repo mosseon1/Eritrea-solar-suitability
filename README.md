@@ -2,7 +2,7 @@
 
 A simple, transparent GIS model in Python (GeoPandas, rasterio) that maps where utility-scale solar PV is most suitable in Eritrea, tests how stable that map is when the factor weights change, and checks the result at the Dekemhare 30 MW PV plant.
 
-![Suitability map](outputs/map_suitability.png)
+![Suitability map](map_suitability.png)
 
 ## Question
 
@@ -58,14 +58,14 @@ Where in Eritrea do high solar resource, gentle terrain, open land and nearby in
 - 83.9 % of the baseline top-10 % area is robust (≥ 90 % of scenarios).
 - No single weight dominates: the largest correlation between a weight and the share of the top 10 % kept is for land cover (r = −0.24); GHI 0.10, slope −0.08, power lines 0.04, roads 0.00.
 
-![Robustness map](outputs/map_robustness.png)
+![Robustness map](map_robustness.png)
 
 **Dekemhare 30 MW PV plant**
 - The Dekemhare town cell itself is excluded (built-up), as expected.
 - Within 3 km (84 usable cells): median score 0.874 (above the top-10 % threshold), best score 0.908 (98th percentile), and some cells are in the top 10 % in all 300 scenarios. The model independently ranks the area where the plant was built among the most suitable land in Eritrea.
 - GHI at the site: Global Solar Atlas 6.37 kWh/m²/day; ERA5 (1999-2018, nearest grid point 15.0 N, 39.0 E, 2,007 m) 5.87 kWh/m²/day, a bias of −7.9 %. ERA5 also shows the summer rainy-season dip in July-August.
 
-![Dekemhare comparison](outputs/dekemhare_gsa_vs_era5.png)
+![Dekemhare comparison](dekemhare_gsa_vs_era5.png)
 
 ## Limitations
 
@@ -79,10 +79,10 @@ Where in Eritrea do high solar resource, gentle terrain, open land and nearby in
 
 ## Outputs
 
-- `outputs/map_suitability.png`, `outputs/map_robustness.png`, `outputs/dekemhare_gsa_vs_era5.png`
-- `outputs/results.json`: all numbers quoted above
-- `outputs/scenario_weights.csv`: the 300 weight sets and the share of the top 10 % kept in each
-- `outputs/suitability_500m.tif`, `outputs/robustness_top10_pct.tif` (GeoTIFF, EPSG:32637)
+- `map_suitability.png`, `map_robustness.png`, `dekemhare_gsa_vs_era5.png`
+- `results.json`: all numbers quoted above
+- `scenario_weights.csv`: the 300 weight sets and the share of the top 10 % kept in each
+- `suitability_500m.tif`, `robustness_top10_pct.tif` (GeoTIFF, EPSG:32637)
 
 ## How to run
 
